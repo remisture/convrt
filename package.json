@@ -1,0 +1,43 @@
+{
+	"name": "convrt",
+	"version": "0.0.1",
+	"description": "A CLI tool for easy conversion between kilos and pounds",
+	"main": "index.js",
+	"module": "index.js",
+	"type": "module",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/remisture/convrt"
+	},
+	"scripts": {
+		"prettier:check": "prettier --check --cache .",
+		"prettier:write": "prettier --write --cache ."
+	},
+	"bin": {
+		"convrt": "bin/convrt.js"
+	},
+	"keywords": [
+		"cli",
+		"lbs",
+		"kgs",
+		"convert",
+		"kilos",
+		"pounds",
+		"javascript"
+	],
+	"author": "Remi Sture <post@remisture.no>",
+	"license": "ISC",
+	"devDependencies": {
+		"prettier": "^2.8.7"
+	},
+	"dependencies": {
+		"boxen": "^7.0.2",
+		"chalk": "^5.2.0",
+		"clear": "^0.1.0",
+		"command-line-args": "^5.2.1",
+		"command-line-usage": "^7.0.1",
+		"figlet": "^1.6.0",
+		"inquirer": "^9.1.5",
+		"node-localstorage": "^2.2.1"
+	}
+}
