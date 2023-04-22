@@ -11,7 +11,10 @@
 	},
 	"scripts": {
 		"prettier:check": "prettier --check --cache .",
-		"prettier:write": "prettier --write --cache ."
+		"prettier:write": "prettier --write --cache .",
+		"bump:major": "npm version major",
+		"bump:minor": "npm version minor",
+		"bump:patch": "npm version patch"
 	},
 	"bin": {
 		"convrt": "bin/convrt.js"
@@ -23,7 +26,11 @@
 		"convert",
 		"kilos",
 		"pounds",
-		"javascript"
+		"metric",
+		"imperial",
+		"javascript",
+		"node",
+		"nodejs"
 	],
 	"author": "Remi Sture <post@remisture.no>",
 	"license": "ISC",
