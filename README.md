@@ -34,7 +34,3 @@ convrt --lbs 300 -d 2
 <img width="550" alt="" src="https://user-images.githubusercontent.com/2372967/233774052-18d6089c-3292-4106-a6fc-c055dede20db.png">
 <img width="550" alt="" src="https://user-images.githubusercontent.com/2372967/233774053-60fcecba-905d-425c-85e7-8011b58d975b.png">
 <img width="555" alt="" src="https://user-images.githubusercontent.com/2372967/233774141-e96f9fd9-162f-4e7d-8405-67ba27ca0247.png">
-
-
-
-
