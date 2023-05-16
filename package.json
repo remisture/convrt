@@ -1,6 +1,6 @@
 {
 	"name": "convrt",
-	"version": "0.0.6",
+	"version": "0.0.7",
 	"description": "A CLI tool for easy conversion between kilos and pounds",
 	"main": "index.js",
 	"module": "index.js",
