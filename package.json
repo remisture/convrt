@@ -10,14 +10,18 @@
 		"url": "https://github.com/remisture/convrt"
 	},
 	"scripts": {
-		"prettier:check": "prettier --check --cache .",
-		"prettier:write": "prettier --write --cache .",
 		"bump:major": "npm version major",
 		"bump:minor": "npm version minor",
-		"bump:patch": "npm version patch"
+		"bump:patch": "npm version patch",
+		"check-format": "npm test && npm run prettier:check",
+		"format": "xo --fix --prettier && npm run prettier:write",
+		"prettier:check": "prettier --check --cache .",
+		"prettier:write": "prettier --write --cache .",
+		"preversion": "npm run check-format",
+		"test": "xo --prettier"
 	},
 	"bin": {
-		"convrt": "bin/convrt.js"
+		"convrt": "./cli.js"
 	},
 	"keywords": [
 		"cli",
@@ -35,7 +39,8 @@
 	"author": "Remi Sture <post@remisture.no>",
 	"license": "ISC",
 	"devDependencies": {
-		"prettier": "^2.8.7"
+		"prettier": "^2.8.7",
+		"xo": "^0.54.2"
 	},
 	"dependencies": {
 		"boxen": "^7.0.2",
