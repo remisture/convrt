@@ -1,5 +1,7 @@
 # convrt
 
+![npm](https://img.shields.io/npm/dt/convrt) ![npm](https://img.shields.io/npm/v/convrt)
+
 A CLI tool for easy conversion between kilos and pounds.
 
 ## Install
