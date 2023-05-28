@@ -13,12 +13,17 @@
 		"bump:major": "npm version major",
 		"bump:minor": "npm version minor",
 		"bump:patch": "npm version patch",
-		"check-format": "npm test && npm run prettier:check",
+		"validate-code": "npm test && npm run prettier:check",
 		"format": "xo --fix --prettier && npm run prettier:write",
 		"prettier:check": "prettier --check --cache .",
 		"prettier:write": "prettier --write --cache .",
-		"preversion": "npm run check-format",
-		"test": "xo --prettier"
+		"preversion": "npm run validate-code",
+		"test": "xo --prettier && c8 ava"
+	},
+	"ava": {
+		"files": [
+			"tests/**/*.test.js"
+		]
 	},
 	"bin": {
 		"convrt": "./cli.js"
@@ -39,6 +44,8 @@
 	"author": "Remi Sture <post@remisture.no>",
 	"license": "ISC",
 	"devDependencies": {
+		"ava": "^5.3.0",
+		"c8": "^7.14.0",
 		"prettier": "^2.8.7",
 		"xo": "^0.54.2"
 	},

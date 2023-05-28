@@ -1,7 +1,8 @@
-name: CI
+name: Validate code
 on:
-    - push
-    - pull_request
+    pull_request:
+        branches:
+            - '*'
 jobs:
     test:
         name: Node.js ${{ matrix.node-version }}
@@ -19,4 +20,4 @@ jobs:
               with:
                   node-version: ${{ matrix.node-version }}
             - run: npm ci
-            - run: npm run check-format
+            - run: npm run validate-code
