@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#!/usr/bin/env -S node --experimental-modules --experimental-json-modules --no-warnings
 
 import process from 'node:process';
 import { determineUnit, determineValues, parseCliOptions, printResults } from './lib/lib.js';
