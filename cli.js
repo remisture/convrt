@@ -6,7 +6,7 @@ import { logError } from './lib/utils.js';
 
 const run = async () => {
 	try {
-		const cliOptions = parseCliOptions();
+		const cliOptions = await parseCliOptions();
 		const unit = await determineUnit(cliOptions);
 		const values = await determineValues({ ...cliOptions, unit });
 		printResults(unit, values, cliOptions);
