@@ -53,7 +53,7 @@
 		"boxen": "^7.0.2",
 		"chalk": "^5.2.0",
 		"clear": "^0.1.0",
-		"command-line-args": "^5.2.1",
+		"command-line-args": "^6.0.0",
 		"command-line-usage": "^7.0.1",
 		"figlet": "^1.6.0",
 		"inquirer": "^9.1.5",
