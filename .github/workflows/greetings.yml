@@ -10,7 +10,7 @@ jobs:
             pull-requests: write
         if: ${{ github.actor != 'dependabot[bot]' }}
         steps:
-            - uses: actions/first-interaction@v1
+            - uses: actions/first-interaction@v3
               with:
                   repo-token: ${{ secrets.GITHUB_TOKEN }}
                   pr-message: 'Congrats on your first PR 😎!'
