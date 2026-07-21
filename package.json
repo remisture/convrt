@@ -44,10 +44,10 @@
 	"author": "Remi Sture <post@remisture.no>",
 	"license": "ISC",
 	"devDependencies": {
-		"ava": "^6.1.1",
+		"ava": "^8.0.1",
 		"c8": "^11.0.0",
 		"prettier": "^3.2.5",
-		"xo": "^0.58.0"
+		"xo": "^4.0.0"
 	},
 	"dependencies": {
 		"boxen": "^8.0.1",
